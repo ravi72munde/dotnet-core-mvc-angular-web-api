@@ -1,0 +1,11 @@
+/Users/mevendcunha/Documents/NEU Semester data/Semester 2/Web Tools/HotelReservationSystem/HotelReservationSystem/bin/Debug/netcoreapp2.0/HotelReservationSystem.deps.json
+/Users/mevendcunha/Documents/NEU Semester data/Semester 2/Web Tools/HotelReservationSystem/HotelReservationSystem/bin/Debug/netcoreapp2.0/HotelReservationSystem.runtimeconfig.json
+/Users/mevendcunha/Documents/NEU Semester data/Semester 2/Web Tools/HotelReservationSystem/HotelReservationSystem/bin/Debug/netcoreapp2.0/HotelReservationSystem.runtimeconfig.dev.json
+/Users/mevendcunha/Documents/NEU Semester data/Semester 2/Web Tools/HotelReservationSystem/HotelReservationSystem/bin/Debug/netcoreapp2.0/HotelReservationSystem.dll
+/Users/mevendcunha/Documents/NEU Semester data/Semester 2/Web Tools/HotelReservationSystem/HotelReservationSystem/bin/Debug/netcoreapp2.0/HotelReservationSystem.pdb
+/Users/mevendcunha/Documents/NEU Semester data/Semester 2/Web Tools/HotelReservationSystem/HotelReservationSystem/obj/Debug/netcoreapp2.0/HotelReservationSystem.csprojResolveAssemblyReference.cache
+/Users/mevendcunha/Documents/NEU Semester data/Semester 2/Web Tools/HotelReservationSystem/HotelReservationSystem/obj/Debug/netcoreapp2.0/HotelReservationSystem.csproj.CoreCompileInputs.cache
+/Users/mevendcunha/Documents/NEU Semester data/Semester 2/Web Tools/HotelReservationSystem/HotelReservationSystem/obj/Debug/netcoreapp2.0/HotelReservationSystem.AssemblyInfoInputs.cache
+/Users/mevendcunha/Documents/NEU Semester data/Semester 2/Web Tools/HotelReservationSystem/HotelReservationSystem/obj/Debug/netcoreapp2.0/HotelReservationSystem.AssemblyInfo.cs
+/Users/mevendcunha/Documents/NEU Semester data/Semester 2/Web Tools/HotelReservationSystem/HotelReservationSystem/obj/Debug/netcoreapp2.0/HotelReservationSystem.dll
+/Users/mevendcunha/Documents/NEU Semester data/Semester 2/Web Tools/HotelReservationSystem/HotelReservationSystem/obj/Debug/netcoreapp2.0/HotelReservationSystem.pdb
