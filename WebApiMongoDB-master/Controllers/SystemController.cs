@@ -38,10 +38,10 @@ namespace HotelReservation.Controllers
                 _roomRepository.RemoveAllRooms();
                 var rooms = _roomRepository.CreateIndex();
 
-                _roomRepository.AddRoom(new Room() { Id = "1", Category = "Class A", Type = "A", Floor = 1, Capacity = 2 });
-                _roomRepository.AddRoom(new Room() { Id = "2", Category = "Class A", Type = "A", Floor = 2, Capacity = 2 });
-                _roomRepository.AddRoom(new Room() { Id = "3", Category = "Class B", Type = "B", Floor = 3, Capacity = 4 });
-                _roomRepository.AddRoom(new Room() { Id = "4", Category = "Class B", Type = "B", Floor = 4, Capacity = 4 });
+                _roomRepository.AddRoom(new Room() { Id = "1", Category = "Class A", Type = "A", Floor = 1, Capacity = 2, IsBooked = false });
+                _roomRepository.AddRoom(new Room() { Id = "2", Category = "Class A", Type = "A", Floor = 2, Capacity = 2, IsBooked = false });
+                _roomRepository.AddRoom(new Room() { Id = "3", Category = "Class B", Type = "B", Floor = 3, Capacity = 4, IsBooked = false });
+                _roomRepository.AddRoom(new Room() { Id = "4", Category = "Class B", Type = "B", Floor = 4, Capacity = 4, IsBooked = false });
 
                 return "Database NotesDb was created, and collection 'Notes' and 'Rooms' was filled with 4 sample items";
             }

@@ -17,5 +17,6 @@ namespace HotelReservation.Model
         public int    Cost { get; set; } = 0;
         public bool   Internet { get; set; } = false;
         public bool   Balcony { get; set; } = false;
+        public bool IsBooked { get; set; }
     }
 }
