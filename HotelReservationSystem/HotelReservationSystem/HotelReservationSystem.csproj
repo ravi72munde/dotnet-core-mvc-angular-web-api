@@ -15,4 +15,17 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Views\Home\Index1.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Controllers\HomeController %28copy%29.cs" />
+    <Compile Remove="Controllers\RegistrationController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Register\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Views\Home\Index %28copy%29.cshtml" />
+  </ItemGroup>
 </Project>

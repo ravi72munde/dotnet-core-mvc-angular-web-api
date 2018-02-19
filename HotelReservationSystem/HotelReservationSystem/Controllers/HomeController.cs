@@ -28,7 +28,7 @@ namespace HotelReservationSystem.Controllers
                 //Define request data format  
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));  
                   
-                //Sending request to find web api REST service resource get all users using HttpClient  
+                //Sending request to find web api REST service resource users using HttpClient  
                 HttpResponseMessage Res = await client.GetAsync("api/user");  
   
                 //Checking the response is successful or not which is sent using HttpClient  
@@ -45,5 +45,31 @@ namespace HotelReservationSystem.Controllers
                 return View(UserInfo);  
             }  
         }  
+
+        public IActionResult About()
+        {
+            ViewData["Message"] = "Your application description page.";
+
+            return View();
+        }
+
+        public IActionResult Contact()
+        {
+            ViewData["Message"] = "Your contact page.";
+
+            return View();
+        }
+
+        public IActionResult Error()
+        {
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        //Added for Login and Authentication
+        public ActionResult Login()
+        {
+            return View();
+        }
+
     }
 }
