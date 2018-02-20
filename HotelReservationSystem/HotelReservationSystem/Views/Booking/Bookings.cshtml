@@ -7,10 +7,23 @@
 @foreach (var element in Model)
 {
     <br />
-<h4>Room Number : @element.Id
-  Booking Date : @element.BookingDate </h4>
-
-    
+    <div>
+        <div style ="float:left;padding-right: 10px;">
+            <img src=@Url.Content(element.Image1) alt="IMAGES" width="80px" height="80px" />
+        </div>
+        <div>
+            <div>
+                Room Number : @element.Id
+            </div>
+            <div>
+                Booking Date : @element.BookingDate
+            </div>
+            <div>
+                Price : @element.Cost
+            </div>
+        </div>
+        
+    </div>    
 }
 
 

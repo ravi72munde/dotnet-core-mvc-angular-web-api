@@ -29,10 +29,10 @@ namespace HotelReservation.Controllers
                 _userRepository.RemoveAllUsers();
                 var name = _userRepository.CreateIndex();
 
-                Room room1 = new Room() { Id = "1", Category = "Class A", Type = "A", Floor = 1, Capacity = 2, IsBooked = false };
-                Room room2 = new Room() { Id = "2", Category = "Class A", Type = "A", Floor = 2, Capacity = 2, IsBooked = false };
-                Room room3 = new Room() { Id = "3", Category = "Class B", Type = "B", Floor = 3, Capacity = 4, IsBooked = false };
-                Room room4 = new Room() { Id = "4", Category = "Class B", Type = "B", Floor = 4, Capacity = 4, IsBooked = false };
+                Room room1 = new Room() { Id = "90", Category = "Class A", Type = "A", Floor = 1, Capacity = 2, IsBooked = true };
+                Room room2 = new Room() { Id = "33", Category = "Class A", Type = "A", Floor = 2, Capacity = 2, IsBooked = true };
+                Room room3 = new Room() { Id = "56", Category = "Class B", Type = "B", Floor = 3, Capacity = 4, IsBooked = true };
+                Room room4 = new Room() { Id = "99", Category = "Class B", Type = "B", Floor = 4, Capacity = 4, IsBooked = true };
 
 
                 _userRepository.AddUser(new User() { Id = "1", Username = "meven",  Password = "meven", CreatedOn = DateTime.Now, UpdatedOn = DateTime.Now, room = room1});
@@ -50,7 +50,7 @@ namespace HotelReservation.Controllers
                 _roomRepository.AddRoom(new Room() { Id = "4", Category = "Class B", Type = "B", Floor = 4, Capacity = 4, IsBooked = false });
 
                 
-                return "Database NotesDb was created, and collection 'Notes' and 'Rooms' was filled with 4 sample items";
+                return "Database NotesDb was created, and collection 'Users' and 'Rooms' was filled with 4 sample items";
             }
 
             return "Unknown";

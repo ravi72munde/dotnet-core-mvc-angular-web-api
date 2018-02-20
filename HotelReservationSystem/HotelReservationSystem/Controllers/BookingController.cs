@@ -30,9 +30,8 @@ namespace HotelReservationSystem.Controllers
                 client.DefaultRequestHeaders.Clear();
                 //Define request data format  
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-
                 //Sending request to find web api REST service resource users using HttpClient  
-                HttpResponseMessage Res = await client.GetAsync("/api/user/bookings/1" );
+                HttpResponseMessage Res = await client.GetAsync("/api/user/bookings/"+ User_id);
 
                 //Checking the response is successful or not which is sent using HttpClient  
                 if (Res.IsSuccessStatusCode)
