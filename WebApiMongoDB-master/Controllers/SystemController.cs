@@ -29,10 +29,16 @@ namespace HotelReservation.Controllers
                 _userRepository.RemoveAllUsers();
                 var name = _userRepository.CreateIndex();
 
-                _userRepository.AddUser(new User() { Id = "1", Username = "meven",  Password = "meven", CreatedOn = DateTime.Now, UpdatedOn = DateTime.Now});
-                _userRepository.AddUser(new User() { Id = "2", Username = "hemant", Password = "hemant", CreatedOn = DateTime.Now, UpdatedOn = DateTime.Now});
-                _userRepository.AddUser(new User() { Id = "3", Username = "ravi",   Password = "ravi", CreatedOn = DateTime.Now, UpdatedOn = DateTime.Now});
-                _userRepository.AddUser(new User() { Id = "4", Username = "neha",   Password = "neha", CreatedOn = DateTime.Now, UpdatedOn = DateTime.Now}); 
+                Room room1 = new Room() { Id = "1", Category = "Class A", Type = "A", Floor = 1, Capacity = 2, IsBooked = false };
+                Room room2 = new Room() { Id = "2", Category = "Class A", Type = "A", Floor = 2, Capacity = 2, IsBooked = false };
+                Room room3 = new Room() { Id = "3", Category = "Class B", Type = "B", Floor = 3, Capacity = 4, IsBooked = false };
+                Room room4 = new Room() { Id = "4", Category = "Class B", Type = "B", Floor = 4, Capacity = 4, IsBooked = false };
+
+
+                _userRepository.AddUser(new User() { Id = "1", Username = "meven",  Password = "meven", CreatedOn = DateTime.Now, UpdatedOn = DateTime.Now, room = room1});
+                _userRepository.AddUser(new User() { Id = "2", Username = "hemant", Password = "hemant", CreatedOn = DateTime.Now, UpdatedOn = DateTime.Now, room = room2});
+                _userRepository.AddUser(new User() { Id = "3", Username = "ravi",   Password = "ravi", CreatedOn = DateTime.Now, UpdatedOn = DateTime.Now, room = room3});
+                _userRepository.AddUser(new User() { Id = "4", Username = "neha",   Password = "neha", CreatedOn = DateTime.Now, UpdatedOn = DateTime.Now, room = room4}); 
 
 
                 _roomRepository.RemoveAllRooms();
@@ -43,6 +49,7 @@ namespace HotelReservation.Controllers
                 _roomRepository.AddRoom(new Room() { Id = "3", Category = "Class B", Type = "B", Floor = 3, Capacity = 4, IsBooked = false });
                 _roomRepository.AddRoom(new Room() { Id = "4", Category = "Class B", Type = "B", Floor = 4, Capacity = 4, IsBooked = false });
 
+                
                 return "Database NotesDb was created, and collection 'Notes' and 'Rooms' was filled with 4 sample items";
             }
 

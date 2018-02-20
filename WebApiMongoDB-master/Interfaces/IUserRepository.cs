@@ -26,5 +26,9 @@ namespace HotelReservation.Interfaces
 
         // creates a sample index
         Task<string> CreateIndex();
+
+        // get booked rooms for a user
+        Task<IEnumerable<Room>> GetBookings(string User_id);
+       
     }
 }

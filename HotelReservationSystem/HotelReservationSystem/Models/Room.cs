@@ -18,5 +18,6 @@ namespace HotelReservationSystem.Models
         public int Cost { get; set; } = 0;
         public bool Internet { get; set; } = false;
         public bool Balcony { get; set; } = false;
+        public DateTime BookingDate { get; set; } = DateTime.Now;
     }
 }

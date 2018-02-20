@@ -26,6 +26,12 @@ namespace HotelReservation.Controllers
             return GetUserInternal();
         }
 
+        [HttpGet("bookings/{User_id}")]
+        public async Task<IEnumerable<Room>> GetRoom(string User_id)
+        {
+            return await _userRepository.GetBookings(User_id);
+        }
+
         private async Task<IEnumerable<User>> GetUserInternal()
         {
             return await _userRepository.GetAllUsers();

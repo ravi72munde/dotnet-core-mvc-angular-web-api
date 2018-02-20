@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Bookings History";
+}
+
+@model List<Room>
+
+@foreach (var element in Model)
+{
+    <br />
+<h4>Room Number : @element.Id
+  Booking Date : @element.BookingDate </h4>
+
+    
+}
+
+

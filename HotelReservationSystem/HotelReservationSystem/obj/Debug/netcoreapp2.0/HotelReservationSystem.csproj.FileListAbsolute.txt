@@ -9,3 +9,14 @@
 /Users/mevendcunha/Documents/NEU Semester data/Semester 2/Web Tools/HotelReservationSystem/HotelReservationSystem/obj/Debug/netcoreapp2.0/HotelReservationSystem.AssemblyInfo.cs
 /Users/mevendcunha/Documents/NEU Semester data/Semester 2/Web Tools/HotelReservationSystem/HotelReservationSystem/obj/Debug/netcoreapp2.0/HotelReservationSystem.dll
 /Users/mevendcunha/Documents/NEU Semester data/Semester 2/Web Tools/HotelReservationSystem/HotelReservationSystem/obj/Debug/netcoreapp2.0/HotelReservationSystem.pdb
+C:\Users\ravi7\Documents\Development\WEBT\dotnet-core-mvc-angular-web-api\HotelReservationSystem\HotelReservationSystem\obj\Debug\netcoreapp2.0\HotelReservationSystem.csprojResolveAssemblyReference.cache
+C:\Users\ravi7\Documents\Development\WEBT\dotnet-core-mvc-angular-web-api\HotelReservationSystem\HotelReservationSystem\obj\Debug\netcoreapp2.0\HotelReservationSystem.csproj.CoreCompileInputs.cache
+C:\Users\ravi7\Documents\Development\WEBT\dotnet-core-mvc-angular-web-api\HotelReservationSystem\HotelReservationSystem\obj\Debug\netcoreapp2.0\HotelReservationSystem.AssemblyInfoInputs.cache
+C:\Users\ravi7\Documents\Development\WEBT\dotnet-core-mvc-angular-web-api\HotelReservationSystem\HotelReservationSystem\obj\Debug\netcoreapp2.0\HotelReservationSystem.AssemblyInfo.cs
+C:\Users\ravi7\Documents\Development\WEBT\dotnet-core-mvc-angular-web-api\HotelReservationSystem\HotelReservationSystem\obj\Debug\netcoreapp2.0\HotelReservationSystem.dll
+C:\Users\ravi7\Documents\Development\WEBT\dotnet-core-mvc-angular-web-api\HotelReservationSystem\HotelReservationSystem\obj\Debug\netcoreapp2.0\HotelReservationSystem.pdb
+C:\Users\ravi7\Documents\Development\WEBT\dotnet-core-mvc-angular-web-api\HotelReservationSystem\HotelReservationSystem\bin\Debug\netcoreapp2.0\HotelReservationSystem.deps.json
+C:\Users\ravi7\Documents\Development\WEBT\dotnet-core-mvc-angular-web-api\HotelReservationSystem\HotelReservationSystem\bin\Debug\netcoreapp2.0\HotelReservationSystem.runtimeconfig.json
+C:\Users\ravi7\Documents\Development\WEBT\dotnet-core-mvc-angular-web-api\HotelReservationSystem\HotelReservationSystem\bin\Debug\netcoreapp2.0\HotelReservationSystem.runtimeconfig.dev.json
+C:\Users\ravi7\Documents\Development\WEBT\dotnet-core-mvc-angular-web-api\HotelReservationSystem\HotelReservationSystem\bin\Debug\netcoreapp2.0\HotelReservationSystem.dll
+C:\Users\ravi7\Documents\Development\WEBT\dotnet-core-mvc-angular-web-api\HotelReservationSystem\HotelReservationSystem\bin\Debug\netcoreapp2.0\HotelReservationSystem.pdb

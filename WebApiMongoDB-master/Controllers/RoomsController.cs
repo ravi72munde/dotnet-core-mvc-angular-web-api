@@ -63,5 +63,11 @@ namespace HotelReservation.Controllers
         {
             _roomRepository.RemoveRoom(id);
         }
+
+        [HttpPost]
+        public void Book([FromBody]string value)
+        {
+            _roomRepository.AddRoom(new Room() { Category = value });
+        }
     }
 }
