@@ -26,6 +26,12 @@ namespace HotelReservation.Controllers
             return GetUserInternal();
         }
 
+        [HttpGet("bookings/{User_id}")]
+        public async Task<IEnumerable<Room>> GetRoom(string User_id)
+        {
+            return await _userRepository.GetBookings(User_id);
+        }
+
         private async Task<IEnumerable<User>> GetUserInternal()
         {
             return await _userRepository.GetAllUsers();
@@ -43,37 +49,25 @@ namespace HotelReservation.Controllers
             return await _userRepository.GetUser(id) ?? new User();
         }
 
-        // GET api/users/meven
-        [HttpGet("name/{name}")]
-        public Task<User> GetUser(string name)
-        {
-            return GetUserByUsername(name);
-        }
-
-        private async Task<User> GetUserByUsername(string username)
-        {
-            return await _userRepository.GetUserByUserName(username) ?? new User();
-        }
-
-        // POST api/user
+        // POST api/notes
         [HttpPost]
-        public void Post([FromBody]User user)
+        public void Post([FromBody]string username, [FromBody]string password)
         {
-            _userRepository.AddUser(new User() { Username = user.Username, Password = user.Password, CreatedOn = DateTime.Now, UpdatedOn = DateTime.Now });
+            _userRepository.AddUser(new User() { Username = username, Password = password, CreatedOn = DateTime.Now, UpdatedOn = DateTime.Now });
         }
 
-        // PUT api/user/5
+        // PUT api/notes/5
         [HttpPut("{id}")]
         public void Put(string id, [FromBody]string username, [FromBody]string password)
         {
             _userRepository.UpdateUserDocument(id, username, password);
         }
-            
-        // DELETE api/user/23243423
+
+        // DELETE api/notes/23243423
         [HttpDelete("{id}")]
         public void Delete(string id)
         {
             _userRepository.RemoveUser(id);
         }
     }
-}   
+}

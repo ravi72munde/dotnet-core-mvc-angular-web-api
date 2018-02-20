@@ -19,7 +19,7 @@ namespace HotelReservation.Interfaces
         Task<bool> UpdateRoom(string id, string body);
 
         // demo interface - full document update
-        Task<bool> UpdateRoomDocument(string id, string body);
+        Task<bool> UpdateRoomDocument(string id, bool body);
 
         // should be used with high cautious, only in relation with demo setup
         Task<bool> RemoveAllRooms();

@@ -9,9 +9,6 @@ namespace HotelReservation.Interfaces
         Task<IEnumerable<User>> GetAllUsers();
         Task<User> GetUser(string id);
 
-        //get user by username
-        Task<User> GetUserByUserName(string usename);
-
         // add new user document
         Task AddUser(User item);
 
@@ -29,5 +26,9 @@ namespace HotelReservation.Interfaces
 
         // creates a sample index
         Task<string> CreateIndex();
+
+        // get booked rooms for a user
+        Task<IEnumerable<Room>> GetBookings(string User_id);
+       
     }
 }

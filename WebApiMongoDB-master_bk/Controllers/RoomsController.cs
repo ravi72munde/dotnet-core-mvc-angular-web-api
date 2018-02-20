@@ -52,7 +52,7 @@ namespace HotelReservation.Controllers
 
         // PUT api/rooms/5
         [HttpPut("{id}")]
-        public void Put(string id, [FromBody]bool value)
+        public void Put(string id, [FromBody]string value)
         {
             _roomRepository.UpdateRoomDocument(id, value);
         }
@@ -62,6 +62,12 @@ namespace HotelReservation.Controllers
         public void Delete(string id)
         {
             _roomRepository.RemoveRoom(id);
+        }
+
+        [HttpPost]
+        public void Book([FromBody]string value)
+        {
+            _roomRepository.AddRoom(new Room() { Category = value });
         }
     }
 }

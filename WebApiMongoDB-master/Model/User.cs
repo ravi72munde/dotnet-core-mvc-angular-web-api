@@ -15,7 +15,6 @@ namespace HotelReservation.Model
         public Room room { get; set; } = null;
         public DateTime UpdatedOn { get; set; } = DateTime.Now;
         public DateTime CreatedOn { get; set; } = DateTime.Now;
-        public string Telegram_id { get; set; } = string.Empty;
 
     }
 }

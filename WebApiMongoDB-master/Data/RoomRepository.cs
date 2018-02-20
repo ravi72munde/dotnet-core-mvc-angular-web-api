@@ -161,9 +161,12 @@ namespace HotelReservation.Data
             }
         }
 
-        public Task<bool> UpdateRoomDocument(string id, string body)
+        public async Task<bool> UpdateRoomDocument(string id, bool isBooked)
         {
-            throw new NotImplementedException();
+            var room = await GetRoom(id) ?? new Room();
+            room.IsBooked = isBooked;
+
+            return await UpdateRoom(id, room);
         }
     }
 }

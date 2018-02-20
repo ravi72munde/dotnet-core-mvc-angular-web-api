@@ -13,6 +13,7 @@ namespace HotelReservation.Data
     public class UserRepository : IUserRepository
     {
         private readonly UserContext _context = null;
+        
 
         public UserRepository(IOptions<Settings> settings)
         {
@@ -35,26 +36,6 @@ namespace HotelReservation.Data
         public async Task<User> GetUser(string id)
         {
             var filter = Builders<User>.Filter.Eq("Id", id);
-
-            try
-            {
-                return await _context.Users
-                                .Find(filter)
-                                .FirstOrDefaultAsync();
-            }
-            catch (Exception ex)
-            {
-                // log or manage the exception
-                throw ex;
-            }
-        }
-
-        /*
-        *  Added to fetch the user name and password to authenticate a user
-        */
-        public async Task<User> GetUserByUserName(string username)
-        {
-            var filter = Builders<User>.Filter.Eq("Username", username);
 
             try
             {
@@ -182,6 +163,14 @@ namespace HotelReservation.Data
                 // log or manage the exception
                 throw ex;
             }
+        }
+
+        //get bookings for a given user
+        public async Task<IEnumerable<Room>> GetBookings(String user_id)
+        {
+            var user = await GetUser(user_id);
+            return new List<Room> { user.room };
+
         }
     }
 }
